@@ -11,7 +11,7 @@ async function gets() {
 
     let $rat = $doc.getElementById('atcoder');
     let rating = res[len-1].Rating;
-    let colors = ['#808080' , '#804000' , '#008000' , '#00C0C0' , '#0000FF'];
+    let colors = ['#808080' , '#804000' , '#008000' , '#00C0C0' , '#0000FF' , '#C0C000' , '#FF8000' , '#FF0000' , '#FF0000' , '#FF0000' , '#FF0000' , '#FF0000'];
 
     $rat.style.color = (colors[Math.floor(rating/400)]);
 
