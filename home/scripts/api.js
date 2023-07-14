@@ -24,7 +24,7 @@ async function gets() {
         let $perf = $doc.createElement('span');
         let $ch = $doc.createElement('p');
         //Num
-        let oldRat , newRat , newPerf;
+        let oldRat , newRat , newPerf , diff;
         if(i != 0) {
             oldRat = res[i-1].Rating;
         } else {
@@ -33,9 +33,10 @@ async function gets() {
 
         newRat = res[i].Rating;
         newPerf = res[i].Performance;
+        diff = newRat - oldRat;
 
         $title.textContent = res[i].Name;
-        $ch.textContent = `${oldRat} -> ${newRat} (${newRat-oldRat}) / Performance:`;
+        $ch.textContent = `${oldRat} -> ${newRat} (${diff < 0 ? '' : (diff == 0 ? '±' : '+')}${diff}) / Performance:`;
         $perf.textContent = newPerf;
         $perf.style.color = (colors[Math.floor(newPerf/400)]);
         $ch.appendChild($perf);
@@ -43,6 +44,7 @@ async function gets() {
         $add.appendChild($ch);
         $his.appendChild($add);
     }
+
 }
 
 gets();
