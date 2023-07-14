@@ -17,7 +17,8 @@ async function gets() {
 
     let $his = document.getElementById('history');
 
-    for(let i = len-1; i >= 0; i--){
+    let display = 10;
+    for(let i = len-1; i >= Math.max(0 , len-display); i--){
         //DOM
         let $add = $doc.createElement('div');
         let $title = $doc.createElement('h2');
@@ -25,7 +26,7 @@ async function gets() {
         let $ch = $doc.createElement('p');
         //Num
         let oldRat , newRat , newPerf , diff;
-        if(i != 0) {
+        if (i != 0) {
             oldRat = res[i-1].Rating;
         } else {
             oldRat = 0;
