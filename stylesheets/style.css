@@ -101,6 +101,7 @@ header li a:hover{
 .history {
     text-align: center;
     background-color: var(--main-white);
+    padding: 10px;
 }
 
 .history h1 {
@@ -122,7 +123,7 @@ header li a:hover{
     border: 3px solid var(--main-gray);
     border-radius: 15px;
     box-shadow: 0 5px 5px 0 var(--main-gray);
-    margin: 10px 3px;
+    margin: 15px 3px;
     transition: 700ms;
 }
 
