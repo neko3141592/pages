@@ -1,0 +1,131 @@
+html{
+    --main-blue:rgba(0 , 200 , 240 , 0.5);
+    --none-gray:rgba(0, 59, 75, 0.5);
+    --main-gray:rgba(230,230,230);
+    --main-white:rgba(255,255,255);
+    --main-brack:rgba(0 , 0 , 0 , 0.3);
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    margin: 0;
+    background-color: #000000;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header::-webkit-scrollbar{
+    display:none;
+}
+a {
+    text-decoration: none;
+    
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    transition: 700ms;
+    white-space: nowrap;
+    overflow-x: auto;
+    z-index: 5;
+}
+header h1{
+    margin:0;
+    padding: 5px 10px;
+    font-size: 30px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    padding: 0 10px;
+}
+header li{
+    padding-right: 10px;
+    transition: 700ms;
+}
+header a{
+    color: #000000;
+    text-decoration: none;
+    transition: 500ms;
+}
+header li a:hover{
+    color: var(--main-blue);
+}
+.title { 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 200vh;
+    position:relative;
+    background-color: var(--main-white);
+}
+
+.title h1{
+    font-size: 25vw;
+    background: linear-gradient(90deg, #0021c7, #3b00fb 30%, #00ccff);
+    background: -webkit-linear-gradient(0deg, #4158D0, #3b00fb 30%, #00d7fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin:0;
+    padding: 30vh 0 0 0;
+    vertical-align: middle;
+    z-index: 0;
+}
+
+.title h2 {
+    font-size: 7vw;
+} 
+
+.about {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position:relative;
+    /* background-color: var(--main-gray); */
+}
+
+.about h1 {
+    font-size: 12.5vh;
+    padding: 3vw;
+    color: var(--main-white);
+}
+
+.about p {
+    font-size: 2.5vh;
+    padding : 0 3vw;
+    color: var(--main-white);
+}
+
+.history {
+    text-align: center;
+    background-color: var(--main-white);
+}
+
+.history h1 {
+    font-size: 12.5vh;
+    padding: 3vw;
+}
+
+.history h2 {
+    font-size: 2vw;
+    padding : 0 3vw;
+}
+
+.history p {
+    font-size: 1.75vh;
+    padding : 0 3vw;
+}
+
+.history div {
+    border: 3px solid var(--main-gray);
+    border-radius: 15px;
+    box-shadow: 0 5px 5px 0 var(--main-gray);
+    margin: 10px 3px;
+    transition: 700ms;
+}
+
+.history div:hover {
+    background-color: var(--main-blue);
+}
