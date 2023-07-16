@@ -22,7 +22,7 @@ function headChange (y) {
 function titleChange (y) {
     $title.style.opacity = (height/2-y)/(height/2);
     $title.style.transform = `rotateX(${y/20}deg) rotateY(${y/20}deg)`
-    $head.style.transform = `rotateX(${y/20}deg) rotateY(${y/20}deg)`
+    $head.style.transform = `rotateX(${y/2}deg) rotateY(${y/2}deg)`
 }
 
 $doc.addEventListener('scroll' , () => {

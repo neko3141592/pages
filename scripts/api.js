@@ -10,10 +10,13 @@ async function gets() {
     let len = res.length;
 
     let $rat = $doc.getElementById('atcoder');
+    let $rat_dis = $doc.getElementById('rat-dis');
     let rating = res[len-1].Rating;
     let colors = ['#808080' , '#804000' , '#008000' , '#00C0C0' , '#0000FF' , '#C0C000' , '#FF8000' , '#FF0000' , '#FF0000' , '#FF0000' , '#FF0000' , '#FF0000'];
 
     $rat.style.color = (colors[Math.floor(rating/400)]);
+    $rat_dis.style.color = (colors[Math.floor(rating/400)]);
+    $rat_dis.textContent = rating;
 
     let $his = document.getElementById('history');
 

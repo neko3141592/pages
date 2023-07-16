@@ -46,8 +46,11 @@ header li{
 }
 header a{
     color: #000000;
+    border-radius: 15px;
+    box-shadow: 3px 3px var(--main-gray);
     text-decoration: none;
     transition: 500ms;
+    padding : 5px 10px;
 }
 header li a:hover{
     color: var(--main-blue);
@@ -133,4 +136,30 @@ header li a:hover{
 
 .history div:hover {
     background-color: var(--main-blue);
+}
+
+.contact {
+    text-align: center;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.contact h1 {
+    font-size: 12.5vh;
+    padding: 3vw;
+    color: var(--main-white);
+}
+
+.contact p {
+    color: var(--main-white);
+}
+
+.contact p {
+    font-size: 2.5vh;
+    padding : 0 3vw;
+    color: var(--main-white);
+}
+
+.contact a {
+    color: var(--main-white);
 }
