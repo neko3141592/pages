@@ -77,6 +77,10 @@ header li a:hover{
     font-size: 7vw;
 } 
 
+.title a{
+    color: #000000;
+}
+
 .about {
     text-align: center;
     margin: 0;
