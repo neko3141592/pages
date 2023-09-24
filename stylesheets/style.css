@@ -65,19 +65,20 @@ header li a:hover{
 }
 
 .title h1{
-    font-size: 25vw;
+    font-size: 20vw;
     background: linear-gradient(90deg, #0021c7, #3b00fb 30%, #00ccff);
     background: -webkit-linear-gradient(0deg, #4158D0, #3b00fb 30%, #00d7fd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin:0;
-    padding: 30vh 0 0 0;
+    padding: 10vh 0 0 0;
     vertical-align: middle;
     z-index: 0;
 }
 
 .title h2 {
     font-size: 7vw;
+    padding: 0 0 0 0;
 } 
 
 .title a{
@@ -94,7 +95,7 @@ header li a:hover{
 }
 
 .about h1 {
-    font-size: 12.5vh;
+    font-size: 7vh;
     padding: 3vw;
     color: var(--main-white);
 }
@@ -112,17 +113,17 @@ header li a:hover{
 }
 
 .history h1 {
-    font-size: 12.5vh;
-    padding: 3vw;
+    font-size: 7vw;
+    padding: 1vh 2vw;
 }
 
 .history h2 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding : 0 3vw;
 }
 
 .history p {
-    font-size: 1.75vh;
+    font-size: 1.75vw;
     padding : 0 3vw;
 }
 
@@ -145,7 +146,7 @@ header li a:hover{
 }
 
 .contact h1 {
-    font-size: 12.5vh;
+    font-size: 7vh;
     padding: 3vw;
     color: var(--main-white);
 }
